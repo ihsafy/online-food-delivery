@@ -1,0 +1,812 @@
+/* ============================================
+   DASHBOARD STYLES
+   Online Food Delivery System
+   Styles for Customer, Rider & Admin Dashboards
+   ============================================ */
+
+/* ---------- Dashboard Welcome Section ---------- */
+.dashboard-welcome {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: #fff;
+    padding: 35px 30px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
+    animation: fadeIn 0.6s ease-out;
+}
+
+.dashboard-welcome h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.dashboard-welcome p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.dashboard-welcome .welcome-icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* ---------- Dashboard Quick Actions ---------- */
+.quick-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    animation: fadeIn 0.7s ease-out;
+}
+
+.quick-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    background: #fff;
+    border: 2px solid #e74c3c;
+    border-radius: 10px;
+    color: #e74c3c;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quick-action-btn:hover {
+    background: #e74c3c;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(231, 76, 60, 0.25);
+}
+
+.quick-action-btn .action-icon {
+    font-size: 1.2rem;
+}
+
+/* ---------- Dashboard Section Title ---------- */
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2d3436;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f0f0f0;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.section-title span {
+    color: #e74c3c;
+}
+
+/* ---------- Recent Orders Section ---------- */
+.recent-orders {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    animation: fadeIn 0.7s ease-out;
+}
+
+/* ---------- Order Card ---------- */
+.order-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    border-left: 4px solid #e74c3c;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.order-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+}
+
+.order-card .order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.order-card .order-id {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2d3436;
+}
+
+.order-card .order-date {
+    font-size: 0.8rem;
+    color: #b2bec3;
+}
+
+.order-card .order-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-card .order-total {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #e74c3c;
+}
+
+/* ---------- Cart Styles ---------- */
+.cart-container {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.6s ease-out;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.2s ease;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item:hover {
+    background: #fafafa;
+}
+
+.cart-item .item-info h4 {
+    font-size: 1rem;
+    color: #2d3436;
+    margin-bottom: 3px;
+}
+
+.cart-item .item-info p {
+    font-size: 0.85rem;
+    color: #636e72;
+}
+
+.cart-item .item-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #e74c3c;
+}
+
+.cart-item .item-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 15px;
+    border-top: 2px solid #e74c3c;
+}
+
+.cart-total .total-label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2d3436;
+}
+
+.cart-total .total-amount {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #e74c3c;
+}
+
+/* ---------- Quantity Control ---------- */
+.qty-control {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.qty-control .qty-btn {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #dfe6e9;
+    border-radius: 6px;
+    background: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2d3436;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.qty-control .qty-btn:hover {
+    border-color: #e74c3c;
+    color: #e74c3c;
+    background: #ffeef0;
+}
+
+.qty-control .qty-value {
+    font-size: 1rem;
+    font-weight: 600;
+    min-width: 30px;
+    text-align: center;
+}
+
+/* ---------- Payment Section ---------- */
+.payment-container {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 550px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.6s ease-out;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.payment-method {
+    flex: 1;
+    text-align: center;
+}
+
+.payment-method input[type="radio"] {
+    display: none;
+}
+
+.payment-method label {
+    display: block;
+    padding: 18px 12px;
+    border: 2px solid #dfe6e9;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.payment-method label .method-icon {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 6px;
+}
+
+.payment-method label .method-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #636e72;
+}
+
+.payment-method input[type="radio"]:checked + label {
+    border-color: #e74c3c;
+    background: #ffeef0;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.12);
+}
+
+.payment-method input[type="radio"]:checked + label .method-name {
+    color: #e74c3c;
+}
+
+.payment-method label:hover {
+    border-color: #e74c3c;
+    transform: translateY(-3px);
+}
+
+.payment-summary {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.payment-summary .summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 0.95rem;
+    color: #636e72;
+}
+
+.payment-summary .summary-row.total {
+    border-top: 2px solid #dfe6e9;
+    margin-top: 8px;
+    padding-top: 12px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #2d3436;
+}
+
+.payment-summary .summary-row.total span:last-child {
+    color: #e74c3c;
+}
+
+/* ---------- Chat System ---------- */
+.chat-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    animation: fadeIn 0.6s ease-out;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.chat-header {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: #fff;
+    padding: 18px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.chat-header .chat-order-id {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-top: 3px;
+}
+
+.chat-messages {
+    padding: 25px;
+    min-height: 350px;
+    max-height: 450px;
+    overflow-y: auto;
+    background: #f8f9fa;
+}
+
+.chat-message {
+    margin-bottom: 18px;
+    display: flex;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.chat-message.sent {
+    justify-content: flex-end;
+}
+
+.chat-message.received {
+    justify-content: flex-start;
+}
+
+.chat-bubble {
+    max-width: 70%;
+    padding: 12px 18px;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    position: relative;
+}
+
+.chat-message.sent .chat-bubble {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: #fff;
+    border-bottom-right-radius: 4px;
+}
+
+.chat-message.received .chat-bubble {
+    background: #fff;
+    color: #2d3436;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.chat-bubble .chat-time {
+    font-size: 0.7rem;
+    opacity: 0.7;
+    margin-top: 5px;
+    display: block;
+}
+
+.chat-bubble .chat-sender {
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.chat-message.sent .chat-bubble .chat-sender {
+    color: #ffeef0;
+}
+
+.chat-message.received .chat-bubble .chat-sender {
+    color: #e74c3c;
+}
+
+.chat-input {
+    display: flex;
+    padding: 15px 20px;
+    border-top: 1px solid #f0f0f0;
+    background: #fff;
+    gap: 10px;
+}
+
+.chat-input textarea {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid #dfe6e9;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    resize: none;
+    min-height: 45px;
+    max-height: 45px;
+    transition: border-color 0.3s ease;
+}
+
+.chat-input textarea:focus {
+    outline: none;
+    border-color: #e74c3c;
+}
+
+.chat-input .btn-send {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.chat-input .btn-send:hover {
+    background: linear-gradient(135deg, #c0392b, #a93226);
+    transform: translateY(-2px);
+}
+
+/* ---------- Delivery Status Tracker ---------- */
+.status-tracker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    margin: 20px 0;
+    position: relative;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.status-tracker::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #dfe6e9;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.status-step {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    flex: 1;
+}
+
+.status-step .step-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #dfe6e9;
+    color: #b2bec3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.status-step.active .step-circle {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.35);
+    animation: pulse 1.5s infinite;
+}
+
+.status-step.completed .step-circle {
+    background: #00b894;
+    color: #fff;
+}
+
+.status-step .step-label {
+    font-size: 0.75rem;
+    color: #b2bec3;
+    font-weight: 600;
+}
+
+.status-step.active .step-label {
+    color: #e74c3c;
+}
+
+.status-step.completed .step-label {
+    color: #00b894;
+}
+
+/* ---------- Admin Food Management ---------- */
+.food-form {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.6s ease-out;
+}
+
+.food-form h3 {
+    font-size: 1.3rem;
+    color: #2d3436;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* ---------- Admin Assign Rider ---------- */
+.assign-rider-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.assign-rider-form select {
+    padding: 8px 14px;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.assign-rider-form select:focus {
+    outline: none;
+    border-color: #e74c3c;
+}
+
+/* ---------- Rider Delivery Card ---------- */
+.delivery-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 25px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #e74c3c;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.delivery-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.delivery-card .delivery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.delivery-card .delivery-info {
+    margin-bottom: 12px;
+}
+
+.delivery-card .delivery-info p {
+    font-size: 0.9rem;
+    color: #636e72;
+    margin-bottom: 4px;
+}
+
+.delivery-card .delivery-info p strong {
+    color: #2d3436;
+}
+
+.delivery-card .delivery-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* ---------- Status Update Buttons ---------- */
+.status-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.status-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.status-btn.accept {
+    background: #a29bfe;
+    color: #fff;
+}
+
+.status-btn.pickup {
+    background: #fd79a8;
+    color: #fff;
+}
+
+.status-btn.onway {
+    background: #fdcb6e;
+    color: #333;
+}
+
+.status-btn.deliver {
+    background: #00b894;
+    color: #fff;
+}
+
+/* ---------- Confirmation Box ---------- */
+.confirm-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 35px;
+    max-width: 450px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.6s ease-out;
+}
+
+.confirm-box .confirm-icon {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.confirm-box h3 {
+    font-size: 1.3rem;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.confirm-box p {
+    font-size: 0.95rem;
+    color: #636e72;
+    margin-bottom: 20px;
+}
+
+.confirm-box .confirm-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+/* ---------- Menu Filter ---------- */
+.menu-filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.filter-btn {
+    padding: 8px 18px;
+    border: 2px solid #dfe6e9;
+    border-radius: 20px;
+    background: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #636e72;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    border-color: #e74c3c;
+    background: #ffeef0;
+    color: #e74c3c;
+}
+
+/* ---------- No Data Message ---------- */
+.no-data {
+    text-align: center;
+    padding: 40px;
+    color: #b2bec3;
+    font-size: 1rem;
+}
+
+.no-data .no-data-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* ---------- Responsive Dashboard ---------- */
+@media (max-width: 768px) {
+    .dashboard-welcome {
+        padding: 25px 20px;
+    }
+
+    .dashboard-welcome h2 {
+        font-size: 1.3rem;
+    }
+
+    .quick-actions {
+        flex-direction: column;
+    }
+
+    .payment-methods {
+        flex-direction: column;
+    }
+
+    .status-tracker {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .status-tracker::before {
+        display: none;
+    }
+
+    .chat-messages {
+        min-height: 250px;
+        max-height: 350px;
+    }
+
+    .chat-bubble {
+        max-width: 85%;
+    }
+
+    .delivery-card .delivery-actions {
+        flex-direction: column;
+    }
+
+    .assign-rider-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 480px) {
+    .order-card .order-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .order-card .order-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .cart-total {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
